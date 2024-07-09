@@ -17,13 +17,14 @@ const tecnologias: Array<string> = ['html', 'css', 'js']
 const notas: ReadonlyArray<number> = [7, 9, 5, 8];
 //tecnologias.push(); É de um array de apenas leitura"A propriedade 'push' não existe no tipo 'readonly number[]'."
 
+//Tupla utulizar no ts + de um tipo de dado
 const lista: [nome: string, estaEstudando: boolean, idade: number] = ['gian', true, 27]
 
-// Union type, nome do simbolo -> | = pipe
+// Union Type, nome do simbolo -> | = pipe
 let idadeDaAna: number | string = 25
 idadeDaAna = '25 anos'
 
-//any variavel do tipo any aceita qualquer valor
+//Any variavel do tipo any aceita qualquer valor
 let dadosDaApi: any;
 dadosDaApi = 10
 dadosDaApi = true
